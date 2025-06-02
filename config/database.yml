@@ -52,7 +52,7 @@ production:
   primary: &primary_production
     <<: *default
     database: production
-    username: postgres
+    username: mysql
     password: <%= ENV["DATABASE_PASSWORD"] %>
   cache:
     <<: *primary_production
