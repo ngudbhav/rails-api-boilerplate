@@ -16,5 +16,4 @@ module Users
       params.permit(:name, :email_address)
     end
   end
-
 end

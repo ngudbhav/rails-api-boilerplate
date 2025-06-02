@@ -23,7 +23,7 @@ rails db:migrate
 - Integration with Sentry for error tracking
 - Integration with Discard gem for soft deletion
 - Integration with Sidekiq for background job processing
-- Optional Passport authentication
+- Optional Password authentication
 
 ## Running the Application
 To start the Rails server, run:
