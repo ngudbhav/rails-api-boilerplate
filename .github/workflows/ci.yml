@@ -59,7 +59,8 @@ jobs:
       - name: Symlink MySQL socket
         run: |
           mkdir -p /tmp
-          ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
+          ln -sf /var/run/mysqld/mysqld.sock /tmp/mysql.sock
+          ls -l /tmp/mysql.sock
 
       - name: Install packages
         run: sudo apt-get update && sudo apt-get install --no-install-recommends -y build-essential default-libmysqlclient-dev git pkg-config
