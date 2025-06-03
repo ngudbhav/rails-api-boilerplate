@@ -55,12 +55,12 @@ jobs:
       #     - 6379:6379
       #   options: --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
 
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: trilogy://127.0.0.1:3306
+      RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+      # REDIS_URL: redis://localhost:6379/0
     steps:
-      - name: Symlink MySQL socket
-        run: |
-          mkdir -p /tmp
-          ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock
-
       - name: Install packages
         run: sudo apt-get update && sudo apt-get install --no-install-recommends -y build-essential default-libmysqlclient-dev git pkg-config
 
@@ -73,10 +73,8 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
+      - name: Prepare database
+        run: bin/rails db:create db:schema:load
+
       - name: Run tests
-        env:
-          RAILS_ENV: test
-          DATABASE_URL: trilogy://127.0.0.1:3306
-          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-          # REDIS_URL: redis://localhost:6379/0
-        run: bin/rails db:test:prepare test
+        run: bundle exec rspec --format documentation --color
