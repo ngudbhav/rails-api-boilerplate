@@ -53,7 +53,7 @@ RSpec.describe PasswordsController, type: :controller do
           user: {
             email: user.email_address,
             password: password,
-            password_confirmation: password,
+            password_confirmation: password
           },
           token: Faker::Crypto.md5
         }
@@ -86,7 +86,7 @@ RSpec.describe PasswordsController, type: :controller do
     context 'when the user does not exist' do
       it 'does not send an email' do
         expect {
-          post :create, params: { email_address: ''}
+          post :create, params: { email_address: '' }
         }.not_to change { ActionMailer::Base.deliveries.count }
         expect(response).to have_http_status(:ok)
       end
