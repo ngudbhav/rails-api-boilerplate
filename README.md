@@ -7,23 +7,22 @@ This application is built with Rails 8 and uses MySQL as the database. The code 
 ```bash
 git clone https://github.com/ngudbhav/rails-api-boilerplate.git
 cd rails-api-boilerplate
-bundle install
-rails db:create
-rails db:migrate
+bin/setup
 ```
 
 ## Features
 - API-only Rails application
-- JWT authentication
-- YJIT enabled for performance
-- Lib for OTP (One Time Password) generation and verification
-- Common utilities for API responses in concerns
-- Profile controller for user profile management
-- Image upload functionality using Active Storage
-- Integration with Sentry for error tracking
-- Integration with Discard gem for soft deletion
+- Mobile-first authentication with [OTP](lib/otp) and design with [JWT](lib/jwt_authenticate.rb)
+- Global credentials loader with fail-safe ([lib/credentials.rb](lib/credentials.rb))
+- [YJIT](https://shopify.engineering/ruby-yjit-is-production-ready) enabled for performance ([lib/enable_yjit.rb](config/initializers/enable_yjit.rb))
+- Common utilities for API responses ([controllers/concerns/api_response.rb](app/controllers/concerns/response.rb))
+- Uses [Trilogy](https://github.com/trilogy-libraries/trilogy) as the MySQL adapter for better performance
+- Integration with [Sentry](https://sentry.io/welcome/) for error tracking
+- Integration with [Discard](https://github.com/jhawthorn/discard) (successor of [Paranoia](https://github.com/rubysherpas/paranoia)) for soft deletion
 - Integration with Sidekiq for background job processing
-- Optional Password authentication
+- Preconfigured with [Rubocop](https://github.com/rubocop/rubocop)
+- Preconfigured with [GitHub Actions](.github/workflows/ci.yml) for CI/CD
+- Unit testing with [RSpec](https://rspec.info/)
 
 ## Running the Application
 To start the Rails server, run:
@@ -31,3 +30,10 @@ To start the Rails server, run:
 ```bash
 rails server
 ```
+
+## CAUTION
+Issue the below command and remove master.key file from the repository.
+```bash
+git rm config/master.key
+```
+Rotate the master key immediately and store it securely. The application will not work without it.
