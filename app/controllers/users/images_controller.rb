@@ -8,11 +8,11 @@ module Users
 
     def create
       # Add validation to limit the file upload
-      if current_user.images.attach(params[:file])
-        ok
-      else
-        bad_request
-      end
+      current_user.images.attach(params[:file])
+
+      ok
+    rescue ActiveSupport::MessageVerifier::InvalidSignature
+      bad_request
     end
 
     def destroy
