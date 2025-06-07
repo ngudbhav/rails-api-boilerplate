@@ -61,4 +61,19 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-gem "rspec", "~> 3.13"
+group :test do
+  # Use RSpec for testing
+  gem "rspec-rails"
+
+  # Use Factory Bot for testing
+  gem "factory_bot_rails"
+
+  # Use Faker for generating fake data in tests
+  gem "faker"
+
+  # Use SimpleCov for code coverage analysis
+  gem "simplecov"
+
+  # Use RSpec Sidekiq for testing Sidekiq jobs
+  gem "rspec-sidekiq"
+end

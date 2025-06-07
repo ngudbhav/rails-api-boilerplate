@@ -4,7 +4,7 @@ class EnqueueLogger
   include Sidekiq::ServerMiddleware
 
   def call(job_class, job, queue, _redis_pool)
-    logger.info "enqueue worker=#{job_class} jid=#{job['jid']} queue=#{queue} args=#{job['args'].inspect}"
+    logger.debug "enqueue worker=#{job_class} jid=#{job['jid']} queue=#{queue} args=#{job['args'].inspect}"
     yield
   end
 end
