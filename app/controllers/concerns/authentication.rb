@@ -14,9 +14,6 @@ module Authentication
   attr_reader :current_user
 
   private
-  def authenticated?
-    resume_session
-  end
 
   def require_authentication
     resume_session || request_authentication

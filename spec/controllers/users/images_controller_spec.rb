@@ -17,19 +17,36 @@ RSpec.describe Users::ImagesController, type: :controller do
   end
 
   describe 'POST #create' do
-    let(:valid_params) do
-      {
-        file: fixture_file_upload('spec/fixtures/users/sample-dp-6.webp', 'image/webp')
-      }
+    context 'with valid image' do
+      let(:valid_params) do
+        {
+          file: fixture_file_upload('spec/fixtures/users/sample-dp-6.webp', 'image/webp')
+        }
+      end
+
+      it 'creates a new image' do
+        expect(user.images.count).to eq(0)
+        expect {
+          post :create, params: valid_params
+        }.to change(ActiveStorage::Attachment, :count).by(1)
+        expect(response).to have_http_status(:ok)
+        expect(user.images.count).to eq(1)
+      end
     end
 
-    it 'creates a new image' do
-      expect(user.images.count).to eq(0)
-      expect {
-        post :create, params: valid_params
-      }.to change(ActiveStorage::Attachment, :count).by(1)
-      expect(response).to have_http_status(:ok)
-      expect(user.images.count).to eq(1)
+    context 'with invalid image' do
+      let(:invalid_params) do
+        {
+          file: "x"
+        }
+      end
+
+      it 'does not create a new image' do
+        expect(user.images.count).to eq(0)
+        post :create, params: invalid_params
+        expect(response).to have_http_status(:bad_request)
+        expect(user.images.count).to eq(0)
+      end
     end
   end
 
