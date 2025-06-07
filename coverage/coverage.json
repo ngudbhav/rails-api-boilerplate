@@ -1,0 +1,987 @@
+{
+  "meta": {
+    "simplecov_version": "0.22.0"
+  },
+  "coverage": {
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/channels/application_cable/connection.rb": {
+      "lines": [
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/application_controller.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/concerns/authentication.rb": {
+      "lines": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        3,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        7,
+        null,
+        null,
+        1,
+        7,
+        null,
+        null,
+        1,
+        7,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        7,
+        7,
+        7,
+        null,
+        7,
+        7,
+        null,
+        0,
+        null,
+        null,
+        0,
+        0,
+        null,
+        null,
+        1,
+        8,
+        8,
+        null,
+        8,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 36,
+          "end_line": 36,
+          "coverage": 7
+        },
+        {
+          "type": "else",
+          "start_line": 36,
+          "end_line": 36,
+          "coverage": 0
+        },
+        {
+          "type": "then",
+          "start_line": 40,
+          "end_line": 40,
+          "coverage": 7
+        },
+        {
+          "type": "else",
+          "start_line": 42,
+          "end_line": 42,
+          "coverage": 0
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/concerns/response.rb": {
+      "lines": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        19,
+        3,
+        null,
+        16,
+        null,
+        null,
+        null,
+        1,
+        3,
+        2,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 15,
+          "end_line": 15,
+          "coverage": 3
+        },
+        {
+          "type": "else",
+          "start_line": 17,
+          "end_line": 17,
+          "coverage": 16
+        },
+        {
+          "type": "then",
+          "start_line": 23,
+          "end_line": 23,
+          "coverage": 2
+        },
+        {
+          "type": "else",
+          "start_line": 25,
+          "end_line": 25,
+          "coverage": 1
+        },
+        {
+          "type": "then",
+          "start_line": 31,
+          "end_line": 31,
+          "coverage": 0
+        },
+        {
+          "type": "else",
+          "start_line": 33,
+          "end_line": 33,
+          "coverage": 1
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/passwords_controller.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        1,
+        null,
+        null,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        3,
+        null,
+        2,
+        null,
+        1,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 7,
+          "end_line": 7,
+          "coverage": 1
+        },
+        {
+          "type": "else",
+          "start_line": 6,
+          "end_line": 8,
+          "coverage": 1
+        },
+        {
+          "type": "then",
+          "start_line": 16,
+          "end_line": 16,
+          "coverage": 1
+        },
+        {
+          "type": "else",
+          "start_line": 18,
+          "end_line": 18,
+          "coverage": 1
+        },
+        {
+          "type": "else",
+          "start_line": 26,
+          "end_line": 26,
+          "coverage": 2
+        },
+        {
+          "type": "then",
+          "start_line": 26,
+          "end_line": 26,
+          "coverage": 0
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/sessions_controller.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        2,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 9,
+          "end_line": 11,
+          "coverage": 1
+        },
+        {
+          "type": "else",
+          "start_line": 13,
+          "end_line": 13,
+          "coverage": 1
+        },
+        {
+          "type": "then",
+          "start_line": 36,
+          "end_line": 36,
+          "coverage": 0
+        },
+        {
+          "type": "else",
+          "start_line": 36,
+          "end_line": 36,
+          "coverage": 0
+        },
+        {
+          "type": "else",
+          "start_line": 38,
+          "end_line": 38,
+          "coverage": 2
+        },
+        {
+          "type": "then",
+          "start_line": 38,
+          "end_line": 38,
+          "coverage": 0
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/users/images_controller.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/users/profiles_controller.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/controllers/users_controller.rb": {
+      "lines": [
+        1,
+        1,
+        13,
+        null,
+        1,
+        null,
+        1,
+        10,
+        9,
+        9,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        19,
+        null,
+        null,
+        1,
+        10,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 9,
+          "end_line": 10,
+          "coverage": 9
+        },
+        {
+          "type": "else",
+          "start_line": 12,
+          "end_line": 12,
+          "coverage": 1
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/jobs/abstract_job.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/jobs/otp/expiry_job.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        3,
+        null,
+        3,
+        null,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 8,
+          "end_line": 8,
+          "coverage": 1
+        },
+        {
+          "type": "else",
+          "start_line": 8,
+          "end_line": 8,
+          "coverage": 2
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/mailers/application_mailer.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/mailers/passwords_mailer.rb": {
+      "lines": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/models/application_record.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        151,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/models/current.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/models/session.rb": {
+      "lines": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        10,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/models/user.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        34,
+        1,
+        null,
+        null,
+        1,
+        476,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/app/models/user_verification.rb": {
+      "lines": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        24,
+        null,
+        1,
+        61,
+        null,
+        1,
+        null,
+        1,
+        23,
+        23,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/credentials.rb": {
+      "lines": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/jwt_authenticate.rb": {
+      "lines": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        12,
+        12,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        11,
+        10,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/otp/errors.rb": {
+      "lines": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/otp/generate.rb": {
+      "lines": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        20,
+        null,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/otp/send.rb": {
+      "lines": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        13,
+        13,
+        null,
+        13,
+        12,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        10,
+        null,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "else",
+          "start_line": 13,
+          "end_line": 13,
+          "coverage": 12
+        },
+        {
+          "type": "then",
+          "start_line": 13,
+          "end_line": 13,
+          "coverage": 1
+        },
+        {
+          "type": "else",
+          "start_line": 14,
+          "end_line": 14,
+          "coverage": 11
+        },
+        {
+          "type": "then",
+          "start_line": 14,
+          "end_line": 14,
+          "coverage": 1
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/otp/verify.rb": {
+      "lines": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        10,
+        10,
+        null,
+        10,
+        9,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        6,
+        6,
+        null,
+        null,
+        1,
+        null,
+        1,
+        6,
+        4,
+        null,
+        3,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        null,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "else",
+          "start_line": 13,
+          "end_line": 13,
+          "coverage": 9
+        },
+        {
+          "type": "then",
+          "start_line": 13,
+          "end_line": 13,
+          "coverage": 1
+        },
+        {
+          "type": "else",
+          "start_line": 14,
+          "end_line": 14,
+          "coverage": 8
+        },
+        {
+          "type": "then",
+          "start_line": 14,
+          "end_line": 14,
+          "coverage": 1
+        },
+        {
+          "type": "then",
+          "start_line": 23,
+          "end_line": 23,
+          "coverage": 2
+        },
+        {
+          "type": "else",
+          "start_line": 23,
+          "end_line": 23,
+          "coverage": 4
+        },
+        {
+          "type": "else",
+          "start_line": 29,
+          "end_line": 29,
+          "coverage": 4
+        },
+        {
+          "type": "then",
+          "start_line": 29,
+          "end_line": 29,
+          "coverage": 2
+        },
+        {
+          "type": "else",
+          "start_line": 30,
+          "end_line": 30,
+          "coverage": 3
+        },
+        {
+          "type": "then",
+          "start_line": 30,
+          "end_line": 30,
+          "coverage": 1
+        }
+      ]
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/sidekiq_constraint.rb": {
+      "lines": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "branches": []
+    },
+    "/Users/udbhav.gambhir/Desktop/ngudbhav/style/style/lib/users/phone_authenticate.rb": {
+      "lines": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        4,
+        null,
+        2,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "branches": [
+        {
+          "type": "then",
+          "start_line": 20,
+          "end_line": 20,
+          "coverage": 2
+        },
+        {
+          "type": "else",
+          "start_line": 22,
+          "end_line": 22,
+          "coverage": 2
+        }
+      ]
+    }
+  },
+  "groups": {
+    "Controllers": {
+      "lines": {
+        "covered_percent": 96.89922480620154
+      }
+    },
+    "Channels": {
+      "lines": {
+        "covered_percent": 0.0
+      }
+    },
+    "Models": {
+      "lines": {
+        "covered_percent": 100.0
+      }
+    },
+    "Mailers": {
+      "lines": {
+        "covered_percent": 71.42857142857143
+      }
+    },
+    "Helpers": {
+      "lines": {
+        "covered_percent": 100.0
+      }
+    },
+    "Jobs": {
+      "lines": {
+        "covered_percent": 100.0
+      }
+    },
+    "Libraries": {
+      "lines": {
+        "covered_percent": 71.73913043478261
+      }
+    }
+  }
+}
