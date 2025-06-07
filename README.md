@@ -21,7 +21,7 @@ bin/setup
 - Integration with [Discard](https://github.com/jhawthorn/discard) (successor of [Paranoia](https://github.com/rubysherpas/paranoia)) for soft deletion
 - Integration with Sidekiq for background job processing
 - Preconfigured with [Rubocop](https://github.com/rubocop/rubocop)
-- Preconfigured with [GitHub Actions](.github/workflows/ci.yml) for CI/CD
+- Preconfigured with [GitHub Actions](.github/workflows/ci.yml) and [Dependabot](.github/dependabot.yml) for CI/CD
 - Unit testing with [RSpec](https://rspec.info/)
 
 ## Running the Application
