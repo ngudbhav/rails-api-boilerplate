@@ -26,7 +26,7 @@ class JwtAuthenticate
     # Decodes a JWT token and returns the payload as a hash.
     # If the token is invalid or cannot be decoded, it returns an empty hash.
     # @param token [String] The JWT token to decode.
-    # @return [HashWithIndifferentAccess] The decoded payload as a hash with indifferent access.
+    # @return [ActiveSupport::HashWithIndifferentAccess] The decoded payload as a hash with indifferent access.
     def decode(token)
       body = JWT.decode(token, SECRET_KEY)[0]
       HashWithIndifferentAccess.new body

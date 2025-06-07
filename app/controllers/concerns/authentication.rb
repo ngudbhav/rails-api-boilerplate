@@ -58,5 +58,6 @@ module Authentication
 
   def terminate_session
     Current.session.discard!
+    @current_user = nil
   end
 end

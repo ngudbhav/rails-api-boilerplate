@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   private
 
   def user_phone_number
-    params.expect!(:phone_number)
+    params.require(:user).expect!(:phone_number)
   end
 
   def set_user

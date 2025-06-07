@@ -63,7 +63,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_01_27_135048) do
     t.bigint "user_id", null: false
     t.string "phone_number", null: false
     t.string "verification_code", null: false
-    t.boolean "status", default: false, null: false
+    t.integer "status", default: 0, null: false
     t.datetime "discarded_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

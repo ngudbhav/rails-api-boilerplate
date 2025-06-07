@@ -1,7 +1,7 @@
 module Users
   class ProfilesController < ApplicationController
     def show
-      ok
+      ok(user: current_user)
     end
 
     def update
@@ -13,7 +13,7 @@ module Users
     private
 
     def update_params
-      params.permit(:name, :email_address)
+      params.require(:user).permit(:name, :email_address)
     end
   end
 end

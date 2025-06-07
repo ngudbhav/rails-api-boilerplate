@@ -4,7 +4,7 @@ class CreateUserVerifications < ActiveRecord::Migration[8.0]
       t.references :user, null: false, foreign_key: true
       t.string :phone_number, null: false
       t.string :verification_code, null: false
-      t.boolean :status, null: false, default: UserVerification.statuses[:unverified]
+      t.integer :status, null: false, default: UserVerification.statuses[:unverified]
       t.datetime :discarded_at
 
       t.timestamps

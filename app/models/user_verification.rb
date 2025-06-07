@@ -12,7 +12,7 @@ class UserVerification < ApplicationRecord
   private
 
   def set_verification_params
-    self.verification_code ||= Otp::Generate.call
     self.status = self.class.statuses[:unverified]
+    self.verification_code ||= Otp::Generate.call
   end
 end

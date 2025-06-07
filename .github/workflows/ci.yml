@@ -48,18 +48,17 @@ jobs:
         ports:
           - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
-
-      # redis:
-      #   image: redis
-      #   ports:
-      #     - 6379:6379
-      #   options: --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
+      redis:
+        image: redis
+        ports:
+          - 6379:6379
+        options: --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
 
     env:
       RAILS_ENV: test
       DATABASE_URL: trilogy://127.0.0.1:3306
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-      # REDIS_URL: redis://localhost:6379/0
+      REDIS_URL: redis://localhost:6379/0
     steps:
       - name: Install packages
         run: sudo apt-get update && sudo apt-get install --no-install-recommends -y build-essential default-libmysqlclient-dev git pkg-config

@@ -1,7 +1,7 @@
 module Users
   class ImagesController < ApplicationController
     def index
-      @images = current_user.images
+      @images = current_user.images_blobs
 
       ok(images: @images)
     end
