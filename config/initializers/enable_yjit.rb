@@ -1,3 +1,5 @@
+# Be sure to restart your server when you modify this file.
+
 # Automatically enable YJIT if running Ruby 3.3 or newer,
 # as it brings very sizeable performance improvements.
 # Many users reported 15-25% improved latency.
