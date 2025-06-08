@@ -1,4 +1,4 @@
-# Rails 8 and Ruby 3.4 API only Boilerplate application
+# Rails 8 and Ruby 3.4 API Boilerplate application
 
 ## Setup
 Ensure that Ruby 3.4 is installed and active in the environment. You can use a version manager like `rbenv` or `rvm` to manage Ruby versions.
