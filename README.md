@@ -37,3 +37,13 @@ Issue the below command and remove master.key file from the repository.
 git rm config/master.key
 ```
 Rotate the master key immediately and store it securely. The application will not work without it.
+
+It is also recommended to rotate the `secret_key_base` in the `config/credentials.yml.enc` file.
+
+## Setting up Sentry
+To set up Sentry, you need to create a Sentry account and obtain a DSN (Data Source Name). Once you have the DSN, add it the application.
+You can do this by setting the `sentry.dsn` in the `config/credentials.yml.enc` file:
+
+```bash
+EDITOR="code --wait" bin/rails credentials:edit
+```

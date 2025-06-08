@@ -10,7 +10,12 @@ class EnqueueLogger
 end
 
 Sidekiq.configure_client do |config|
+  config.redis = { url: Credentials.get("REDIS_URL", "redis://localhost:6379/1") }
   config.client_middleware do |chain|
     chain.add EnqueueLogger
   end
+end
+
+Sidekiq.configure_server do |config|
+  config.redis = { url: Credentials.get("REDIS_URL", "redis://localhost:6379/1") }
 end
