@@ -37,6 +37,7 @@ Issue the below command and remove master.key file from the repository.
 git rm config/master.key
 ```
 Rotate the master key immediately and store it securely. The application will not work without it.
+
 It is also recommended to rotate the `secret_key_base` in the `config/credentials.yml.enc` file.
 
 ## Setting up Sentry
