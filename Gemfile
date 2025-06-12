@@ -77,3 +77,5 @@ group :test do
   # Use RSpec Sidekiq for testing Sidekiq jobs
   gem "rspec-sidekiq"
 end
+
+gem "strong_migrations", "~> 2.3"
