@@ -51,7 +51,7 @@ gem "sentry-ruby"
 gem "sentry-rails"
 
 # Use strong_migrations to prevent dangerous migrations
-gem "strong_migrations", "~> 2.3"
+gem "strong_migrations", "~> 2.4"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
