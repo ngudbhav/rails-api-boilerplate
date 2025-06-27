@@ -78,6 +78,9 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
+    annotaterb (4.16.0)
+      activerecord (>= 6.0.0)
+      activesupport (>= 6.0.0)
     ast (2.4.3)
     base64 (0.3.0)
     bcrypt (3.1.20)
@@ -318,6 +321,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    yard (0.9.37)
     zeitwerk (2.7.3)
 
 PLATFORMS
@@ -326,6 +330,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-session_store (~> 2.1)
+  annotaterb
   bcrypt (~> 3.1.7)
   bootsnap
   brakeman
@@ -352,6 +357,7 @@ DEPENDENCIES
   thruster
   trilogy
   tzinfo-data
+  yard
 
 BUNDLED WITH
    2.6.3
