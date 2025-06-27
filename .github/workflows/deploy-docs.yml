@@ -1,6 +1,5 @@
 name: deploy-docs.yml
 on:
-  pull_request:
   push:
     branches: [ main ]
 
