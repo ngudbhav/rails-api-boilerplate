@@ -77,3 +77,9 @@ jobs:
 
       - name: Run tests
         run: bundle exec rspec --format documentation --color
+
+      - name: Run code coverage
+        uses: joshmfrankel/simplecov-check-action@main
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          minimum_suite_coverage: 85
