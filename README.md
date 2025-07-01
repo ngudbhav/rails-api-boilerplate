@@ -1,5 +1,8 @@
 # Rails 8 and Ruby 3.4 API Boilerplate application
 
+[![Documentation](https://github.com/ngudbhav/rails-api-boilerplate/actions/workflows/deploy-docs.yml/badge.svg)](https://ngudbhav.github.io/rails-api-boilerplate/)
+[![Test](https://github.com/ngudbhav/rails-api-boilerplate/actions/workflows/ci.yml/badge.svg)](https://github.com/ngudbhav/rails-api-boilerplate/actions/workflows/ci.yml)
+
 ## Setup
 Ensure that Ruby 3.4 is installed and active in the environment. You can use a version manager like `rbenv` or `rvm` to manage Ruby versions.
 This application is built with Rails 8 and uses MySQL as the database. The code is tested with MySQL 9.3 but should work with MySQL 8.0 as well.
