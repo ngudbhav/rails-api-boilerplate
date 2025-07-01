@@ -125,7 +125,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.12.2)
-    jwt (3.1.1)
+    jwt (3.1.2)
       base64
     language_server-protocol (3.17.0.5)
     lint_roller (1.1.0)
@@ -163,7 +163,7 @@ GEM
     parser (3.3.8.0)
       ast (~> 2.4.1)
       racc
-    phonelib (0.10.9)
+    phonelib (0.10.10)
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -281,13 +281,13 @@ GEM
       ffi (~> 1.12)
       logger
     securerandom (0.4.1)
-    sentry-rails (5.25.0)
+    sentry-rails (5.26.0)
       railties (>= 5.0)
-      sentry-ruby (~> 5.25.0)
-    sentry-ruby (5.25.0)
+      sentry-ruby (~> 5.26.0)
+    sentry-ruby (5.26.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
-    sidekiq (8.0.4)
+    sidekiq (8.0.5)
       connection_pool (>= 2.5.0)
       json (>= 2.9.0)
       logger (>= 1.6.2)
