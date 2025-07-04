@@ -1,13 +1,14 @@
 ENV['RAILS_ENV'] ||= 'test'
+require 'support/simplecov_helper'
+Support::SimpleCovHelper.configure
+SimpleCov.start
+
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 # Uncomment the line below in case you have `--require rails_helper` in the `.rspec` file
 # that will avoid rails generators crashing because migrations haven't been run yet
 # return unless Rails.env.test?
-require 'support/simplecov_helper'
-Support::SimpleCovHelper.configure
-SimpleCov.start
 
 require 'rspec/rails'
 require 'rspec/mocks'

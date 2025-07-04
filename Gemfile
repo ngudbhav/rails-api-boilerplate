@@ -86,6 +86,9 @@ group :test do
   # Use SimpleCov for code coverage analysis
   gem "simplecov"
 
+  # Use SimpleCov JSON formatter for generating JSON coverage reports
+  gem "simplecov-json"
+
   # Use RSpec Sidekiq for testing Sidekiq jobs
   gem "rspec-sidekiq"
 end

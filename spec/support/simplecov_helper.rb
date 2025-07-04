@@ -1,5 +1,5 @@
 require 'simplecov'
-require 'simplecov_json_formatter'
+require 'simplecov-json'
 
 module Support
   class SimpleCovHelper

@@ -34,3 +34,5 @@
 # Ignore IDE and editor specific files.
 /.idea
 /.yardoc
+/coverage
+/coverage/
