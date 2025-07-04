@@ -1,4 +1,5 @@
 require 'simplecov'
+require 'simplecov-json'
 require 'simplecov_json_formatter'
 
 module Support
