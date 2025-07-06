@@ -84,3 +84,8 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           minimum_suite_coverage: 85
           minimum_file_coverage: 50
+
+      - name: Ping Health Check
+        run: |
+          RAILS_ENV=development bundle exec rails server &
+          curl --retry 5 --retry-delay 2 --retry-connrefused -s http://localhost:3000/up || exit 1
