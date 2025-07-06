@@ -88,4 +88,6 @@ jobs:
       - name: Ping Health Check
         run: |
           RAILS_ENV=development bundle exec rails server &
-          curl --retry 5 --retry-delay 2 --retry-connrefused -s http://localhost:3000/up || exit 1
+          if [ $(curl -LI http://localhost:3000/up -o /dev/null -w '%{http_code}\n' --retry 5 --retry-delay 2 --retry-connrefused -s) == "200" ]; then exit 0; fi
+          exit 1
+#          curl --retry 5 --retry-delay 2 --retry-connrefused -s http://localhost:3000/up || exit 1
