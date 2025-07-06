@@ -72,7 +72,9 @@ jobs:
           bundler-cache: true
 
       - name: Prepare database
-        run: bin/rails db:create db:schema:load
+        run: |
+          bin/rails db:create db:schema:load
+          RAILS_ENV=test bin/rails db:create db:schema:load
 
       - name: Run tests
         run: bundle exec rspec --format documentation --color
