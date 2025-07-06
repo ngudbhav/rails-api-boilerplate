@@ -27,6 +27,11 @@ bin/setup
 - Preconfigured with [GitHub Actions](.github/workflows/ci.yml) and [Dependabot](.github/dependabot.yml) for CI/CD
 - Unit testing with [RSpec](https://rspec.info/)
 
+## Documentation
+Documentation is generated using [YARD](https://yardoc.org/) and can be viewed online at [ngudbhav.github.io/rails-api-boilerplate](https://ngudbhav.github.io/rails-api-boilerplate/).
+The documentation is Continuously deployed using GitHub Actions. Check the [main.yml](.github/workflows/main.yml) for the deployment process.
+The documentation only builds when the `main` branch is updated.
+
 ## Running the Application
 To start the Rails server, run:
 
