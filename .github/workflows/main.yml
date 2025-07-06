@@ -1,4 +1,4 @@
-name: deploy-docs.yml
+name: main.yml
 on:
   push:
     branches: [ main ]

@@ -55,7 +55,6 @@ jobs:
         options: --health-cmd "redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
 
     env:
-      RAILS_ENV: test
       DATABASE_URL: trilogy://127.0.0.1:3306
       RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       REDIS_URL: redis://localhost:6379/0
@@ -73,7 +72,9 @@ jobs:
           bundler-cache: true
 
       - name: Prepare database
-        run: bin/rails db:create db:schema:load
+        run: |
+          bin/rails db:create db:schema:load
+          RAILS_ENV=test bin/rails db:create db:schema:load
 
       - name: Run tests
         run: bundle exec rspec --format documentation --color
@@ -84,3 +85,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           minimum_suite_coverage: 85
           minimum_file_coverage: 50
+
+      - name: Ping Health Check
+        run: |
+          bundle exec rails server &
+          if [ $(curl -LI http://localhost:3000/up -o /dev/null -w '%{http_code}\n' --retry 5 --retry-delay 2 --retry-connrefused -s) == "200" ]; then exit 0; fi
+          exit 1
