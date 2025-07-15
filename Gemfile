@@ -92,3 +92,5 @@ group :test do
   # Use RSpec Sidekiq for testing Sidekiq jobs
   gem "rspec-sidekiq"
 end
+
+gem "aws-sdk-s3", "~> 1.192"
