@@ -1,4 +1,8 @@
 name: main.yml
+
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ main ]
@@ -27,4 +31,3 @@ jobs:
           publish_branch: gh-pages
           publish_dir: ./doc
           force_orphan: true
-
