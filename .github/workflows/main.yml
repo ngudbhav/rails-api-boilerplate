@@ -1,7 +1,7 @@
 name: main.yml
 
 permissions:
-  pages: write
+  contents: write
 
 on:
   pull_request:
