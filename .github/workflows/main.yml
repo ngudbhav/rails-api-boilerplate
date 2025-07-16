@@ -1,8 +1,10 @@
-permissions:
-  contents: read
-  pages: write
 name: main.yml
+
+permissions:
+  pages: write
+
 on:
+  pull_request:
   push:
     branches: [ main ]
 
