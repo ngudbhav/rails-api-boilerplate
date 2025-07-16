@@ -26,6 +26,15 @@ bin/setup
 - Preconfigured with [Rubocop](https://github.com/rubocop/rubocop)
 - Preconfigured with [GitHub Actions](.github/workflows/ci.yml) and [Dependabot](.github/dependabot.yml) for CI/CD
 - Unit testing with [RSpec](https://rspec.info/)
+- Fully up-to-date dependencies with [Dependabot](.github/dependabot.yml)
+- Health check endpoint at `/up` preconfigured with Github Actions
+- Integrated with [YARD](https://yardoc.org/) for documentation generation.
+- Container support with both Docker and Podman for easy deployment
+- Coverage reports with [SimpleCov](https://github.com/simplecov-ruby/simplecov) on every test run
+- Support for [Ransack](https://github.com/activerecord-hackery/ransack) for advanced search capabilities
+- [Annotate-rb](https://github.com/drwl/annotaterb) for automatic model documentation
+- Added and configured [Strong Migrations](https://github.com/ankane/strong_migrations) for database migrations
+- Secured with [Brakeman](https://brakemanscanner.org/), GitHub's CodeQL and Secret Scanning.
 
 ## Documentation
 Documentation is generated using [YARD](https://yardoc.org/) and can be viewed online at [ngudbhav.github.io/rails-api-boilerplate](https://ngudbhav.github.io/rails-api-boilerplate/).
