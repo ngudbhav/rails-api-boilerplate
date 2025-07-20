@@ -6,7 +6,8 @@ updates:
     interval: daily
   open-pull-requests-limit: 10
   groups:
-    applies-to: version-updates
+    support-dependencies:
+      applies-to: version-updates
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
