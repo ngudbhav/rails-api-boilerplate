@@ -147,7 +147,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jmespath (1.6.2)
-    json (2.15.0)
+    json (2.15.1)
     jwt (3.1.2)
       base64
     language_server-protocol (3.17.0.5)
@@ -314,7 +314,7 @@ GEM
     sentry-ruby (5.28.0)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
-    sidekiq (8.0.7)
+    sidekiq (8.0.8)
       connection_pool (>= 2.5.0)
       json (>= 2.9.0)
       logger (>= 1.6.2)
