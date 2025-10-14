@@ -331,7 +331,7 @@ GEM
       simplecov
     simplecov_json_formatter (0.1.4)
     stringio (3.1.7)
-    strong_migrations (2.5.0)
+    strong_migrations (2.5.1)
       activerecord (>= 7.1)
     thor (1.4.0)
     thruster (0.1.15-arm64-darwin)
@@ -385,7 +385,7 @@ DEPENDENCIES
   sidekiq
   simplecov
   simplecov-json
-  strong_migrations (~> 2.4)
+  strong_migrations (~> 2.5)
   thruster
   trilogy
   tzinfo-data
