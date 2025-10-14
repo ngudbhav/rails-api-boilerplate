@@ -51,7 +51,7 @@ gem "sentry-ruby"
 gem "sentry-rails"
 
 # Use strong_migrations to prevent dangerous migrations
-gem "strong_migrations", "~> 2.4"
+gem "strong_migrations", "~> 2.5"
 
 # Use ransack for advanced search functionality
 gem "ransack"
