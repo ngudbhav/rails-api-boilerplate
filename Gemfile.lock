@@ -196,7 +196,7 @@ GEM
     psych (5.2.6)
       date
       stringio
-    puma (7.0.4)
+    puma (7.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.3)
@@ -337,8 +337,8 @@ GEM
     strong_migrations (2.5.1)
       activerecord (>= 7.1)
     thor (1.4.0)
-    thruster (0.1.15-arm64-darwin)
-    thruster (0.1.15-x86_64-linux)
+    thruster (0.1.16-arm64-darwin)
+    thruster (0.1.16-x86_64-linux)
     timeout (0.4.3)
     trilogy (2.9.0)
     tsort (0.2.0)
