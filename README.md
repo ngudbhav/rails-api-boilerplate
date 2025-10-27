@@ -5,7 +5,7 @@
 
 ## Setup
 Ensure that Ruby 3.4 is installed and active in the environment. You can use a version manager like `rbenv` or `rvm` to manage Ruby versions.
-This application is built with Rails 8 and uses MySQL as the database. The code is tested with MySQL 9.3 but should work with MySQL 8.0 as well.
+This application is built with Rails 8 and uses MySQL as the database.
 
 ```bash
 git clone https://github.com/ngudbhav/rails-api-boilerplate.git
@@ -62,5 +62,6 @@ To set up Sentry, you need to create a Sentry account and obtain a DSN (Data Sou
 You can do this by setting the `sentry.dsn` in the `config/credentials.yml.enc` file:
 
 ```bash
+# Assumes VSCode is installed and available in PATH
 EDITOR="code --wait" bin/rails credentials:edit
 ```
