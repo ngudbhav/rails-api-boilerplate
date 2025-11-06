@@ -86,7 +86,7 @@ GEM
       activesupport (>= 6.0.0)
     ast (2.4.3)
     aws-eventstream (1.4.0)
-    aws-partitions (1.1179.0)
+    aws-partitions (1.1180.0)
     aws-sdk-core (3.236.0)
       aws-eventstream (~> 1, >= 1.3.0)
       aws-partitions (~> 1, >= 1.992.0)
@@ -98,7 +98,7 @@ GEM
     aws-sdk-kms (1.116.0)
       aws-sdk-core (~> 3, >= 3.234.0)
       aws-sigv4 (~> 1.5)
-    aws-sdk-s3 (1.202.0)
+    aws-sdk-s3 (1.203.0)
       aws-sdk-core (~> 3, >= 3.234.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.5)
@@ -364,7 +364,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-session_store (~> 2.1)
   annotaterb
-  aws-sdk-s3 (~> 1.202)
+  aws-sdk-s3 (~> 1.203)
   bcrypt (~> 3.1.7)
   bootsnap
   brakeman
