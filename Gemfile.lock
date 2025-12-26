@@ -365,7 +365,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-session_store (~> 2.1)
   annotaterb
-  aws-sdk-s3 (~> 1.208)
+  aws-sdk-s3 (~> 1.209)
   bcrypt (~> 3.1.7)
   bootsnap
   brakeman
