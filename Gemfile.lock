@@ -105,7 +105,7 @@ GEM
     aws-sigv4 (1.12.1)
       aws-eventstream (~> 1, >= 1.0.2)
     base64 (0.3.0)
-    bcrypt (3.1.20)
+    bcrypt (3.1.21)
     bigdecimal (4.0.1)
     bootsnap (1.20.1)
       msgpack (~> 1.2)
@@ -365,7 +365,7 @@ DEPENDENCIES
   activerecord-session_store (~> 2.1)
   annotaterb
   aws-sdk-s3 (~> 1.209)
-  bcrypt (~> 3.1.7)
+  bcrypt (~> 3.1.21)
   bootsnap
   brakeman
   debug
