@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.1.1"
+gem "rails", "~> 8.1.2"
 # Use trilogy as the database for Active Record
 gem "trilogy"
 # Use the Puma web server [https://github.com/puma/puma]
@@ -11,7 +11,7 @@ gem "puma", ">= 5.0"
 gem "jwt"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-gem "bcrypt", "~> 3.1.7"
+gem "bcrypt", "~> 3.1.21"
 
 # Use Active record session store to store sessions in the database
 gem "activerecord-session_store", "~> 2.1"
@@ -93,4 +93,4 @@ group :test do
   gem "rspec-sidekiq"
 end
 
-gem "aws-sdk-s3", "~> 1.208"
+gem "aws-sdk-s3", "~> 1.211"
