@@ -335,7 +335,7 @@ GEM
       simplecov
     simplecov_json_formatter (0.1.4)
     stringio (3.2.0)
-    strong_migrations (2.5.1)
+    strong_migrations (2.5.2)
       activerecord (>= 7.1)
     thor (1.5.0)
     thruster (0.1.17-arm64-darwin)
