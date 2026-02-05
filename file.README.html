@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.9.38
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'>
+<h1 id="rails-8-and-ruby-34-api-boilerplate-application">Rails 8 and Ruby 3.4 API Boilerplate application</h1>
+
+<p><a href="https://ngudbhav.github.io/rails-api-boilerplate/"><img src="https://github.com/ngudbhav/rails-api-boilerplate/actions/workflows/deploy-docs.yml/badge.svg" alt="Documentation"></a> <a href="https://github.com/ngudbhav/rails-api-boilerplate/actions/workflows/ci.yml"><img src="https://github.com/ngudbhav/rails-api-boilerplate/actions/workflows/ci.yml/badge.svg" alt="Test"></a></p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Ensure that Ruby 3.4 is installed and active in the environment. You can use a version manager like <code>rbenv</code> or <code>rvm</code> to manage Ruby versions. This application is built with Rails 8 and uses MySQL as the database.</p>
+
+<pre class="code ruby"><code class="ruby">git clone https://github.com/ngudbhav/rails-api-boilerplate.git
+cd rails-api-boilerplate
+bin/setup
+</code></pre>
+
+<h2 id="features">Features</h2>
+<ul><li>
+<p>API-only Rails application</p>
+</li><li>
+<p>Mobile-first authentication with <a href="lib/otp">OTP</a> and design with <a href="lib/jwt_authenticate_rb.html">JWT</a></p>
+</li><li>
+<p>Global credentials loader with fail-safe (<a href="lib/credentials_rb.html">lib/credentials.rb</a>)</p>
+</li><li>
+<p><a href="https://shopify.engineering/ruby-yjit-is-production-ready">YJIT</a> enabled for performance (<a href="config/initializers/enable_yjit_rb.html">lib/enable_yjit.rb</a>)</p>
+</li><li>
+<p>Common utilities for API responses (<a href="app/controllers/concerns/response_rb.html">controllers/concerns/api_response.rb</a>)</p>
+</li><li>
+<p>Uses <a href="https://github.com/trilogy-libraries/trilogy">Trilogy</a> as the MySQL adapter for better performance</p>
+</li><li>
+<p>Integration with <a href="https://sentry.io/welcome/">Sentry</a> for error tracking</p>
+</li><li>
+<p>Integration with <a href="https://github.com/jhawthorn/discard">Discard</a> (successor of <a href="https://github.com/rubysherpas/paranoia">Paranoia</a>) for soft deletion</p>
+</li><li>
+<p>Integration with Sidekiq for background job processing</p>
+</li><li>
+<p>Preconfigured with <a href="https://github.com/rubocop/rubocop">Rubocop</a></p>
+</li><li>
+<p>Preconfigured with <a href=".github/workflows/ci.yml">GitHub Actions</a> and <a href=".github/dependabot.yml">Dependabot</a> for CI/CD</p>
+</li><li>
+<p>Unit testing with <a href="https://rspec.info/">RSpec</a></p>
+</li><li>
+<p>Fully up-to-date dependencies with <a href=".github/dependabot.yml">Dependabot</a></p>
+</li><li>
+<p>Health check endpoint at <code>/up</code> preconfigured with Github Actions</p>
+</li><li>
+<p>Integrated with <a href="https://yardoc.org/">YARD</a> for documentation generation.</p>
+</li><li>
+<p>Container support with both Docker and Podman for easy deployment</p>
+</li><li>
+<p>Coverage reports with <a href="https://github.com/simplecov-ruby/simplecov">SimpleCov</a> on every test run</p>
+</li><li>
+<p>Support for <a href="https://github.com/activerecord-hackery/ransack">Ransack</a> for advanced search capabilities</p>
+</li><li>
+<p><a href="https://github.com/drwl/annotaterb">Annotate-rb</a> for automatic model documentation</p>
+</li><li>
+<p>Added and configured <a href="https://github.com/ankane/strong_migrations">Strong Migrations</a> for database migrations</p>
+</li><li>
+<p>Secured with <a href="https://brakemanscanner.org/">Brakeman</a>, GitHub’s CodeQL and Secret Scanning.</p>
+</li></ul>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>Documentation is generated using <a href="https://yardoc.org/">YARD</a> and can be viewed online at <a href="https://ngudbhav.github.io/rails-api-boilerplate/">ngudbhav.github.io/rails-api-boilerplate</a>. The documentation is Continuously deployed using GitHub Actions. Check the <a href=".github/workflows/main.yml">main.yml</a> for the deployment process. The documentation only builds when the <code>main</code> branch is updated.</p>
+
+<h2 id="running-the-application">Running the Application</h2>
+
+<p>To start the Rails server, run:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_rails'>rails</span> <span class='id identifier rubyid_server'>server</span>
+</code></pre>
+
+<h2 id="caution">CAUTION</h2>
+
+<p>Issue the below command and remove master.key file from the repository.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_git'>git</span> <span class='id identifier rubyid_rm'>rm</span> <span class='id identifier rubyid_config'>config</span><span class='op'>/</span><span class='id identifier rubyid_master'>master</span><span class='period'>.</span><span class='id identifier rubyid_key'>key</span>
+</code></pre>
+
+<p>Rotate the master key immediately and store it securely. The application will not work without it.</p>
+
+<p>It is also recommended to rotate the <code>secret_key_base</code> in the <code>config/credentials.yml.enc</code> file.</p>
+
+<h2 id="setting-up-sentry">Setting up Sentry</h2>
+
+<p>To set up Sentry, you need to create a Sentry account and obtain a DSN (Data Source Name). Once you have the DSN, add it the application. You can do this by setting the <code>sentry.dsn</code> in the <code>config/credentials.yml.enc</code> file:</p>
+
+<pre class="code ruby"><code class="ruby"># Assumes VSCode is installed and available in PATH
+EDITOR=&quot;code --wait&quot; bin/rails credentials:edit
+</code></pre>
+</div></div>
+
+      <div id="footer">
+  Generated on Thu Feb  5 05:13:31 2026 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.38 (ruby-4.0.0).
+</div>
+
+    </div>
+  </body>
+</html>
