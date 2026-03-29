@@ -4,7 +4,7 @@ class CreateUsers < ActiveRecord::Migration[8.0]
       t.string :name
       t.string :email_address
       t.string :password_digest
-      t.string :phone_number, null: false
+      t.string :phone_number
       t.datetime :discarded_at
 
       t.timestamps
