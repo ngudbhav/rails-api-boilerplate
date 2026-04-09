@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def create
     if @user.save
-      @user.send_otp(user_phone_number)
+      @user.send_otp(user_params[:phone_number]) if @user.phone_number.present?
       ok
     else
       bad_request(@user.errors.full_messages.join(", "))
@@ -15,11 +15,15 @@ class UsersController < ApplicationController
 
   private
 
-  def user_phone_number
-    params.require(:user).expect!(:phone_number)
+  def set_user
+    if user_params[:phone_number].present?
+      @user = User.find_or_initialize_by(phone_number: user_params[:phone_number])
+    else
+      @user = User.new(user_params)
+    end
   end
 
-  def set_user
-    @user = User.find_or_initialize_by(phone_number: user_phone_number)
+  def user_params
+    params.require(:user).permit(:phone_number, :email_address, :password, :password_confirmation)
   end
 end
