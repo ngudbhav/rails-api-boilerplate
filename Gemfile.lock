@@ -191,7 +191,7 @@ GEM
     parser (3.3.11.1)
       ast (~> 2.4.1)
       racc
-    phonelib (0.10.18)
+    phonelib (0.10.20)
     pp (0.6.3)
       prettyprint
     prettyprint (0.2.0)
