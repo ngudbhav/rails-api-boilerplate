@@ -169,7 +169,7 @@ GEM
     mini_magick (5.3.1)
       logger
     mini_mime (1.1.5)
-    minitest (6.0.5)
+    minitest (6.0.6)
       drb (~> 2.0)
       prism (~> 1.5)
     msgpack (1.8.0)
@@ -338,7 +338,7 @@ GEM
       simplecov
     simplecov_json_formatter (0.1.4)
     stringio (3.2.0)
-    strong_migrations (2.7.0)
+    strong_migrations (2.8.0)
       activerecord (>= 7.2)
     thor (1.5.0)
     thruster (0.1.20-arm64-darwin)
@@ -394,7 +394,7 @@ DEPENDENCIES
   sidekiq
   simplecov
   simplecov-json
-  strong_migrations (~> 2.7)
+  strong_migrations (~> 2.8)
   thruster
   trilogy
   tzinfo-data
