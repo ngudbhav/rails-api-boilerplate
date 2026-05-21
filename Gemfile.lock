@@ -380,6 +380,7 @@ DEPENDENCIES
   rspec-sidekiq
   rubocop
   rubocop-rails-omakase
+  ruby-vips (~> 2.3)
   sentry-rails
   sentry-ruby
   sidekiq
