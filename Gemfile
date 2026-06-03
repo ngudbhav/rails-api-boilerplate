@@ -94,4 +94,4 @@ group :test do
   gem "rspec-sidekiq"
 end
 
-gem "aws-sdk-s3", "~> 1.224"
+gem "aws-sdk-s3", "~> 1.225"
