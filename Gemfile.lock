@@ -148,7 +148,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jmespath (1.6.2)
-    json (2.19.5)
+    json (2.19.8)
     jwt (3.2.0)
       base64
     language_server-protocol (3.17.0.5)
@@ -192,7 +192,7 @@ GEM
       prettyprint
     prettyprint (0.2.0)
     prism (1.9.0)
-    psych (5.3.1)
+    psych (5.4.0)
       date
       stringio
     puma (8.0.2)
@@ -311,10 +311,10 @@ GEM
       ffi (~> 1.12)
       logger
     securerandom (0.4.1)
-    sentry-rails (6.5.0)
+    sentry-rails (6.6.1)
       railties (>= 5.2.0)
-      sentry-ruby (~> 6.5.0)
-    sentry-ruby (6.5.0)
+      sentry-ruby (~> 6.6.1)
+    sentry-ruby (6.6.1)
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
       logger
@@ -355,7 +355,7 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     yard (0.9.44)
-    zeitwerk (2.8.1)
+    zeitwerk (2.8.2)
 
 PLATFORMS
   arm64-darwin-24
