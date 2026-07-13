@@ -14,7 +14,7 @@ gem "jwt"
 gem "bcrypt", "~> 3.1.22"
 
 # Use Active record session store to store sessions in the database
-gem "activerecord-session_store", "~> 2.1"
+gem "activerecord-session_store", "~> 2.3"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
